@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Music Alert</title>
+	</head>
+	<body class="bg-info">
+	 	 <p class="text-center fixed-top" th:text="${nowTime}"></p>
+		 <div class="container h5 mt-5 pt-5">
+			<h1 id="header" class="d-flex align-items-center justify-content-center mx-5 my-3">Music Alert</h1>
+			<form action="/home">
+				<div class="container d-flex align-items-center justify-content-center mx-2 my-3">
+					<i>alert setting(year/month/day/time):</i><input type="text" class="rounded light mx-2 my-3">
+					<i>video select(url):</i><input type="text" class="rounded light mx-2 my-3">
+				</div>
+				<button type="submit" id="sub" class="rounded bg-primary text-white">確定</button>
+			</form>
+		 </div>
+	 	<p class="text-center fixed-bottom">© 2022 fk</p>
+	</body>
+</html>
