@@ -10,16 +10,10 @@
 	 	 <p class="text-center fixed-top" th:text="${nowTime}"></p>
 		 <div class="container h5 mt-5 pt-5">
 			<h1 id="header" class="d-flex align-items-center justify-content-center mx-5 my-3">Music Alert</h1>
-			<form action="/afterSetting" method="post">
-				<div class="container d-flex align-items-center justify-content-center mx-2 my-3">
-					<i>alert setting(year/month/day/time):</i><input type="text" name="alertTime" class="rounded light mx-2 my-3">
-					<i>video select(url):</i><input type="text" name="url" class="rounded light mx-2 my-3">
-				</div>
-				<button type="submit" id="sub" class="rounded bg-primary text-white">確定</button>
-			</form>
-			<form action="/home">
-				<button type="submit" id="sub" class="rounded bg-primary text-white mt-3">時間更新</button>
-		 	</form>
+			<div class="container d-flex align-items-center justify-content-center mx-2 my-3">
+				<i>set time:</i><i class="mx-3 my-3" th:text="${setTime}"></i>
+				<i class="mx-3 my-3">selected video:</i><i th:text="${url}"></i>
+			</div>
 		 </div>
 	 	<p class="text-center fixed-bottom">© 2022 fk</p>
 	</body>
